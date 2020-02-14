@@ -1,0 +1,599 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    font-family: "Verdana";
+}
+
+body {
+    font-family: sans-serif;
+    color: #111;
+}
+
+/*HEADER*/
+
+header {
+    background-color: lightskyblue;
+}
+
+header img {
+    float: left;
+    left: 10px;
+    top: 17px;
+}
+
+header h1.titel {
+    font-style: inherit;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2.slogan{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+/*navigatie*/
+nav ul {
+    background-color: darkorange;
+    border: 3px solid black;
+    clear: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+}
+
+li a:hover {
+    background-color: lightgray;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+li a {
+    display: block;
+}
+
+a.nu {
+    color: darkslategrey;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*MAIN*/
+
+img.kamp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 5px;
+    height: 400px;
+    max-width: 640px;
+}
+
+div.afbeeldingen {
+    background-color: lightskyblue;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+article.Inleiding{
+    background-color: azure;
+    border: 10px solid darkorange;
+    padding: 20px
+}
+
+img.Index {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /*ronde image*/
+    border-radius: 20px;
+}
+
+article > p {
+    line-height: 1.3em;
+}
+
+main a {
+    color: white;
+}
+
+.LeesMeer a:link{
+    background-color: darkorange;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+a:hover, a:active {
+    background-color: lightskyblue;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: lightskyblue;
+    height: 130px;
+}
+
+footer p{
+    position: relative;
+    top: 10px;
+    line-height: 1.5em;
+    color: black;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+footer a:link {
+    color:black;
+}
+
+/*Pagina boeken*/
+
+h2.InhoudBoek {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+h2.tussentitel {
+    clear: both;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.boeken p {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+img.boekomslag {
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+main.boeken {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+article.Boek {
+    margin: 6px;
+    border: 8px dashed lightskyblue;
+}
+
+h2.WorkInProgress {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+article.WorkInProgress {
+    margin: 6px;
+    border: 8px dashed lightskyblue;
+}
+
+div.WorkInProgress {
+    display: flex;
+    padding: 10px;
+}
+
+img.WorkInProgress {
+    float: left;
+    margin-right: 10px;
+}
+
+/*Pagina Bushcraft*/
+
+img.Bushcraft {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+h2.Bushcraft {  /*https://www.w3schools.com/howto/howto_css_image_text.asp*/
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: Candara;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+article.Bushcraft {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+aside > h3 {
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 27px;
+    padding: 20px;
+    font-size: 22px;
+    display: inline-block;
+}
+
+p.Bushcraft {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+a.Bushcraft {
+    color: cornflowerblue;
+}
+
+/*Pagina lezingen*/
+
+h3.Lezingen {
+    font-size: 29px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li.Lezingen {
+    list-style-type: disc;
+    font-weight: bold;
+    margin-left: 28px;
+    font-size: 20px;
+}
+
+p.Lezingen {
+    line-height: 20px;
+    margin: 15px;
+    margin-left: 45px;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+img.Lezingen {
+    float: right;
+    margin: 10px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+h3.Contact {
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 20px;
+}
+
+/*Pagina Over*/
+
+h2.OverMij {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article.OverMij {
+    border: 11px solid;
+    border-image: url("../img/border.png") 20% round;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 17.2px;
+    margin: 15px;
+}
+
+img.LivLeeman {
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+p.over {
+    margin-bottom: 20px;
+    line-height: 22px
+}
+
+h2.Contactgegevens {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+ul.LijstOver {
+    list-style-type: square;
+    padding: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+section.SectionContactgegevens {
+    border: 11px solid;
+    border-image: url("../img/border.png") 30 stretch;
+    background-color: aliceblue;
+    margin: 15px;
+}
+
+form.Labels {
+    border: 11px solid;
+    border-image: url("../img/border.png") 30 stretch;
+    background-color: aliceblue;
+    display: block;
+    margin: 15px;
+    line-height: 1.40rem;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+#bericht {
+    height: 7rem;
+    margin-left: 10px;
+    width: 80%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 40%;
+}
+
+input[type="submit"] {
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+a.over {
+    color: black;
+}
+
+a.over:hover {
+    background-color: aliceblue;
+}
+
+/*Responsive*/
+
+/* Mobiel*/
+@media all and (min-width: 400px){
+
+    h1 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h2 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    article.Inleiding {
+        flex: none;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    div.HomeSection {
+        max-width: 100%;
+        flex: none;
+        justify-content: center;
+    }
+
+    article.OverMij {
+        display: inline-block;
+    }
+
+    img.kamp {
+        float: none;
+        width: 100%;
+    }
+
+    div.afbeeldingen {
+        line-height: 0px;
+    }
+
+    main.boeken {
+        grid: none;
+    }
+
+    div.Bushcraft {
+        grid: none;
+    }
+
+    aside > h3 {
+        margin: 20px;
+    }
+
+    h2.Bushcraft {
+        margin-left: 0px;
+    }
+
+    div.WorkInProgress {
+        flex-direction: column;
+        max-width: 350px;
+    }
+}
+
+/*Tablet*/
+@media all and (min-width: 600px){
+    h1 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h2 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    article.Inleiding {
+        margin: .35vw;
+        width: 30vw;
+        margin-bottom: 20px;
+    }
+
+    div.HomeSection {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article.OverMij {
+        display: inline-block;
+    }
+
+    img.kamp {
+        float: none;
+        max-width:500px;
+    }
+
+    main.boeken {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    div.Bushcraft {
+        grid: none;
+    }
+
+    aside > h3 {
+        margin: 20px;
+    }
+
+    h2.Bushcraft {
+        margin-left: 0px;
+    }
+
+    div.WorkInProgress {
+        flex-direction: column;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1100px) {
+
+    h1 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h2 {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    article.Inleiding {
+        margin: .35vw;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    div.HomeSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    article.OverMij {
+        display: inline-block;
+    }
+
+    img.kamp {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    main.boeken {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    main.wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    article.OverMij {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    textarea.bericht {
+        height: 15rem;
+    }
+
+    div.Bushcraft {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+    aside > h3 {
+        margin: 70px 22px 10px;
+    }
+
+    h2.Bushcraft {
+        margin-left: 0px;
+    }
+
+    div.WorkInProgress {
+        flex-direction: row;
+        max-width: none;
+    }
+}
